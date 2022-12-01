@@ -216,7 +216,7 @@ toml = ["tomli"]
 
 [[package]]
 name = "dhos-redis"
-version = "1.0.0"
+version = "1.0.2"
 description = "Redis functionality for DHOS"
 category = "main"
 optional = false
@@ -226,11 +226,6 @@ python-versions = ">=3.8,<4.0"
 environs = ">=9.0.0,<10.0.0"
 redis = ">=3.0.0,<4.0.0"
 she-logging = ">=1.0.0,<2.0.0"
-
-[package.source]
-type = "legacy"
-url = "https://pypi.fury.io/sensynehealth"
-reference = "sensynehealth"
 
 [[package]]
 name = "distlib"
@@ -322,7 +317,7 @@ dotenv = ["python-dotenv"]
 
 [[package]]
 name = "flask-batteries-included"
-version = "3.1.1"
+version = "3.1.2"
 description = "Sensyne Health : Flask Batteries Included"
 category = "main"
 optional = false
@@ -350,11 +345,6 @@ waitress = ">=2.0.0,<3.0.0"
 [package.extras]
 pgsql = ["Flask-Migrate (>=3.0.0,<4.0.0)", "Flask-SQLAlchemy (>=2.0.0,<3.0.0)", "psycopg2-binary (>=2.0.0,<3.0.0)"]
 apispec = ["apispec-webframeworks (<1.0.0)", "connexion[swagger-ui] (>=2.0.0,<3.0.0)"]
-
-[package.source]
-type = "legacy"
-url = "https://pypi.fury.io/sensynehealth"
-reference = "sensynehealth"
 
 [[package]]
 name = "flask-log-request-id"
@@ -763,7 +753,7 @@ testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.
 
 [[package]]
 name = "pytest-dhos"
-version = "1.0.3"
+version = "1.0.5"
 description = "Common fixtures for pytest in DHOS services and libraries"
 category = "dev"
 optional = false
@@ -775,11 +765,6 @@ flask_batteries_included = {version = "*", optional = true, markers = "extra == 
 [package.extras]
 fbi = ["flask-batteries-included"]
 neo = ["neomodel"]
-
-[package.source]
-type = "legacy"
-url = "https://pypi.fury.io/sensynehealth"
-reference = "sensynehealth"
 
 [[package]]
 name = "pytest-flask"
@@ -955,7 +940,7 @@ requests = "*"
 
 [[package]]
 name = "she-logging"
-version = "1.4.0"
+version = "1.4.1"
 description = "Common logging configuration for Sensyne Health microservices"
 category = "main"
 optional = false
@@ -968,11 +953,6 @@ PyYAML = ">=5.0.0,<6.0.0"
 
 [package.extras]
 colour = ["rich (>=10.0.0,<11.0.0)"]
-
-[package.source]
-type = "legacy"
-url = "https://pypi.fury.io/sensynehealth"
-reference = "sensynehealth"
 
 [[package]]
 name = "six"
@@ -1205,8 +1185,8 @@ coloredlogs = []
 connexion = []
 coverage = []
 dhos-redis = [
-    {file = "dhos-redis-1.0.0.tar.gz", hash = "md5:ac1699006ed025e97161be59223736b2"},
-    {file = "dhos_redis-1.0.0-py3-none-any.whl", hash = "md5:5483b2e3ec42d608a03c937c9d2f50cb"},
+    {file = "dhos-redis-1.0.2.tar.gz", hash = "sha256:aaf202391fdfb03e1bdabb5946377c2f4d346103bd3eda7b34ad90a8f9b1e4c0"},
+    {file = "dhos_redis-1.0.2-py3-none-any.whl", hash = "sha256:ba73911053ec421b92f4afceb5c98d7e369fd49226a5e7505f8708a1f251f77c"},
 ]
 distlib = []
 dparse = []
@@ -1215,8 +1195,8 @@ environs = []
 filelock = []
 flask = []
 flask-batteries-included = [
-    {file = "flask-batteries-included-3.1.1.tar.gz", hash = "md5:cca08e8fc3bd6b6016161cf20c41fa00"},
-    {file = "flask_batteries_included-3.1.1-py3-none-any.whl", hash = "md5:bd6af0187d30d98d7a299299cb995add"},
+    {file = "flask-batteries-included-3.1.2.tar.gz", hash = "sha256:3a990c80592a3ccce905d0727837caaf1136f5602c5d2f2362b03d8b707e6bc3"},
+    {file = "flask_batteries_included-3.1.2-py3-none-any.whl", hash = "sha256:7d55fe1699c661ae438d3092b783bbaa9bc3b90df1bd755aca685621b50fbee5"},
 ]
 flask-log-request-id = []
 flask-migrate = []
@@ -1255,8 +1235,8 @@ pyreadline3 = []
 pyrsistent = []
 pytest = []
 pytest-dhos = [
-    {file = "pytest-dhos-1.0.3.tar.gz", hash = "md5:f32445aca47c0ed6d410aa5035a8840f"},
-    {file = "pytest_dhos-1.0.3-py3-none-any.whl", hash = "md5:7dd42a831ab849562d800f692611596f"},
+    {file = "pytest-dhos-1.0.5.tar.gz", hash = "sha256:34951a19bf2d67004091d06926eb7b878680f8fa7097f2b8e023dbd6a31bf6b2"},
+    {file = "pytest_dhos-1.0.5-py3-none-any.whl", hash = "sha256:47fb8a4dd920b32c38a7fab13829feda716afd25882b093dea8473f203ad5e56"},
 ]
 pytest-flask = []
 pytest-mock = []
@@ -1272,8 +1252,8 @@ rsa = []
 sadisplay = []
 safety = []
 she-logging = [
-    {file = "she-logging-1.4.0.tar.gz", hash = "md5:89cabd2bb4b7319ccc94f32799c1f90d"},
-    {file = "she_logging-1.4.0-py3-none-any.whl", hash = "md5:823f13c64489cdfea9734cdc1dc0fc3d"},
+    {file = "she-logging-1.4.1.tar.gz", hash = "sha256:778d9d61885d26302344e98299b998c40dff2d924bfa11d7bedd16eb11f72db3"},
+    {file = "she_logging-1.4.1-py3-none-any.whl", hash = "sha256:2bdc36a31ff05893e08398ed6183389377cc7c7955abddbd4eb903e4f4050a7d"},
 ]
 six = []
 smmap = []
