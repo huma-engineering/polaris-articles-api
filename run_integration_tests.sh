@@ -6,7 +6,7 @@ set -eux
 touch build-circleci.txt
 touch build-githash.txt
 
-TEST_CONTAINER_NAME=$(git remote -v | head -1 | cut -d/ -f2 | sed 's/-api.*/-integration-tests/' | sed 's/polaris/gdm/')
+TEST_CONTAINER_NAME=gdm-articles-integration-tests
 
 cd integration-tests
 
