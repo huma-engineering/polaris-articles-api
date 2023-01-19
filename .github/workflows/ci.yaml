@@ -58,7 +58,7 @@ jobs:
     if: ${{ github.ref == 'refs/heads/develop' }}
     runs-on: ubuntu-latest
     env:
-      ACR_REPO_BASE: dhos
+      ACR_REPO_BASE: gdm
     steps:
       - uses: actions/checkout@v3
       - name: Log in to the Azure Container Registry
